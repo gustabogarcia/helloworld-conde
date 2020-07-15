@@ -3,6 +3,9 @@
 // importa la libreria express
 const express = require('express');
 
+// ponemos el puerto del server en una variable
+const port = process.env.PORT || 3066;
+
 // crea el objeto app
 const app = express();
 
@@ -13,4 +16,4 @@ app.get('/', (req, res) => {
 });
 
 // el server escucha en el puerto 3066
-app.listen(3066);
+app.listen(port);
